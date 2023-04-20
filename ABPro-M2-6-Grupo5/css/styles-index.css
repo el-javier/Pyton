@@ -1,0 +1,141 @@
+
+
+body{
+    background: linear-gradient(90deg, rgba(248,248,255,1) 0%, rgba(215,248,255,1) 100%);
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    display: flex; /* */
+    text-align: left;
+    width: 100%;
+    padding:10px;
+    margin: 10px;
+}
+.titulo {
+    display: flex; /* */
+    text-align: right;
+    width: 100%;
+    padding:10px;
+    margin: 10px;
+}
+.tictulo{
+    display: flex;
+    text-align: right;
+}
+
+nav{
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid black;
+    padding: 10px;
+
+}
+
+details{
+    display: flex;
+    margin-left: 20px;
+}
+
+.marca {
+    border:2px solid black ;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+
+footer{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/* ##### estilos paginas pago y compra #####*/
+#pagos-compras{
+    display: flex;
+    flex-flow: row;
+    background-color: rgb(39, 39, 39);
+}
+
+#col-1{
+    display:flex;
+    flex-flow: column;
+    border: 1px solid lightgray;
+    background-color: white;
+    width:50%;
+
+}
+
+#col-2{
+    align-items: center;
+    display:flex;
+    flex-flow: columns;
+    border: 1px solid lightgray;
+    background-color: white;
+    width: 50%;
+}
+
+/*########################################### */
+@media only screen and (max-width: 1160px) /*Se subio el breakpoint para que la tabla no se desajuste*/ {
+.marca{
+    display: flex;
+    flex-flow: column;
+}
+}
+@media only screen and (max-width: 768px) {
+    .noticia{
+        display: flex;
+        flex-flow: column;
+    }
+    .menu {
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 10px;
+        border: 1px solid black;
+    }
+    .logo {
+        display: flex; /* */
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        padding:10px;
+        margin: 10px;
+    }
+    .titulo {
+        display: flex; /* */
+        text-align: center;
+        width: 100%;
+        padding:10px;
+        margin: 10px;
+    }
+
+    .tictulo{
+        text-align: center;
+    }
+
+    #pagos-compras{
+        flex-flow: column;
+    }
+    
+    #col-1{
+        width:98%;
+    
+    }
+    #col-2{
+        width: 98%;
+    }
+}

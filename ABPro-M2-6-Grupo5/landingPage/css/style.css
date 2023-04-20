@@ -1,0 +1,295 @@
+*{
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box; /*para que las cajas no se desborden unas con otras*/
+}
+
+body{
+    background: linear-gradient(90deg, rgba(248,248,255,1) 0%, rgba(215,248,255,1) 100%);
+}
+
+h1{ 
+    width: 100%;
+    height: 100%;
+    font-size: 3em;
+}
+
+h2{
+    font-size: 1.5em;
+}
+
+h3{
+    font-size: 1em;
+}
+
+.titulo1{
+    padding: 120px 50px;
+    background-image: url(../img/fondo.png);
+    border-radius: 20px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    text-align: center;
+    text-shadow:2px 2px 2px #555555 ;
+}
+
+.titulo2{
+    margin-top: -120px;
+    padding: 100px ;
+    background-image: url(../img/fondo2.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    text-shadow:2px 2px 2px #555555 ;
+}
+
+/*Estilos para barra de navegación*/
+nav {
+    font-family: Domine;
+    font-size: 15px;
+    clear:left ;
+}
+
+.nav-enlace{
+    color: black;
+    text-decoration: none;
+}
+
+.contenedor{
+    width: 100%;
+}
+
+.cabecera{
+    display: flex;
+    align-items: center;
+}
+
+.cabecera img {
+    width: 50%;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    flex-flow: column;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+}
+.section2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+article{
+    display: flex;
+    flex-flow: column;
+    background-color: white;
+    width: 60%;
+}
+
+.columna2{
+    display: flex;
+    flex-flow: column;
+    width: 50%;
+    text-align: justify;
+} 
+
+.columna5{
+
+    flex-flow: column;
+    width: 50%;
+    text-align: justify;
+        
+}
+
+.columna3{
+    display: flex;
+    flex-flow: column;
+    width: 45%;
+    border: 3px solid rgb(24, 24, 105);
+    border-radius: 20px;
+    background-color: rgb(203, 234, 255);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 40px;
+}
+
+.columna4{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    border: 3px dotted rgb(24, 24, 105);
+    border-radius: 20px;
+    background-color: rgb(154, 202, 247);
+    box-sizing: border-box;
+    padding: 40px;
+    }
+    
+    .pie_pagina{
+    display:inline-block;
+    flex-flow: row;
+    width: 100%;
+}
+
+.pie_pagina p{
+    width: 100%;
+    order: 1;
+}
+
+.pie_pagina a{
+    width: 100%;
+    order:2
+}
+
+input{
+    width: 100%;
+}
+
+.formulario{
+    background-color: aliceblue;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #ccc;
+}
+
+img {
+    width: 100%;
+}
+
+.marcas{
+    display: flex;
+    align-items: center;
+}
+
+.marcas img{
+    max-height: 200px;
+    margin: 20px;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+}
+
+.redes img{
+    max-width: 100px;
+    min-width: 50px;
+}
+
+.direccion{
+    padding: 10%;
+    font-size: 20px;
+}
+
+.pdf{
+    background-color: aliceblue;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #ccc;
+}
+@media (min-width: 768px) and (max-width: 980px) {
+
+    .cabecera {
+        flex: auto;
+        flex-direction: column;
+
+    }
+    .columna2{
+        width: 100%;
+        text-align: justify;
+    }
+
+
+    
+}
+
+@media screen and (max-width: 768px) {
+    section{
+        display: flex;
+        flex-flow: column;
+    }
+    .section2{
+        display: flex;
+        flex-flow: column;
+    }
+    article{
+        width: 100%;
+    }
+
+    .columna2{
+        width: 100%;
+        text-align: justify;
+    }
+    
+    .columna3{
+        width: 100%;
+        text-align: justify;
+    }
+    .columna4{
+        width: 100%;
+        text-align: justify;
+    }
+
+    .columna5{
+        width: 100%;
+        text-align: justify;
+    }
+
+    .redes{
+        display: flex;
+        flex-flow: column;
+        padding: 0 30%;
+    }
+
+    .marcas{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .marcas img{
+        max-height: 50px;
+        margin: 0px;
+    }
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.columna3 {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+.columna4 {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+.marcas {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+    margin-left: 100%;
+    width: 300%
+    }
+
+    to {
+    margin-left: 0%;
+    width: 100%;
+    }
+}
