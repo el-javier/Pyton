@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Login Fenix</title>
+    <style>
+        body {
+            background: #0707c6;
+            background: linear-gradient(to right, #0707c6, #8907c6);
+        }
+
+        .bg {
+            background-image: url(img_login/newegg-tech-pc-hardware-wallpaper-1-scaled.jpg);
+            background-position: center center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container w-75 bg-primary mt-5 rounded shadow">
+        <div class="row align-items-stretch">
+            <div class="col bg d-none d-lg-block col-xl-6 rounded"></div>
+
+
+            <div class="col bg-white p-5 rounded-end">
+                <div class="row align-items-start">
+                    <h2 class="fw-bold text-center my-5">Inicio de sesión</h2>
+                    <form id="login">
+                        <div class="alert alert-danger visually-hidden" role="alert" id="msj-error">
+                            Usuario o contraseña incorrectos
+                        </div>
+                        <div class="mb-3"><!---->
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" name="email" aria-describedby="emailHelp"
+                                id="usuario">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" name="password" id="contrasena">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="recordarme">
+                            <label class="form-check-label" for="recordarme">Recordarme</label>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary" id="btn-inicio">Inicia sesión</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script>
+        //La función que se ejecuta cuando se envíe submit o sea cuando el usuario hace clic en "inicio de sesión"
+        document.getElementById('login').addEventListener('submit', function (event) {
+            event.preventDefault(); // previene la recarga de la página
+            login(); // llama a la función login
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="js/logica.js"></script>
+
+</body>
+
+</html>
